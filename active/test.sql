@@ -1,6 +1,6 @@
 --metadb:function bcumming.test
 
-DROP FUNCTION IF EXISTS bcumming.test();
+DROP FUNCTION IF EXISTS bcumming.test;
 
 CREATE FUNCTION bcumming.test()
  RETURNS character varying
