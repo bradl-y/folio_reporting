@@ -7,7 +7,7 @@ CREATE FUNCTION bcumming.test()
  LANGUAGE plpgsql
 AS $function$
 declare
-thisUserName varchar = '';
+thisUserName text := '';
 
 begin
 	select
