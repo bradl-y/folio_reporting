@@ -1,0 +1,11 @@
+{
+    "displayName": "Bradley's dummy query",
+    "description": "Copied and adapted from the Folio Analytics cookbook website. Returns a user group ID and name as a table.",
+    "instructions": "Enter the group name (eg. SOL)",
+    "parameters": [
+      {"name": "user_gr",
+      "displayName": "User group",
+      "type": "text",
+      "required": true}
+    ]
+}
