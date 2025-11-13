@@ -1,0 +1,13 @@
+{
+    "displayName": "Patron loan history",
+    "description": "Allows staff to retrieve the loan history for individual patrons.",
+    "instructions": "Enter the patron's UUID to retrieve his/her loan history.",
+    "parameters": [
+        {
+            "name": "patron_uuid",
+            "displayName": "Patron UUID",
+            "type": "text",
+            "required": true
+        }
+    ]
+}

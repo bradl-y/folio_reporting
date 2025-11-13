@@ -1,0 +1,31 @@
+# PyCharm specific files
+.idea/
+*.iml
+*.iws
+
+# Python specific files
+__pycache__/
+*.pyc
+*.pyd
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Other common ignored files
+.env
+.flaskenv
+*.log
+*.sqlite3
+
+# Working files directory
+working/

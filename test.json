@@ -1,0 +1,7 @@
+{
+    "displayName": "Bradley's Test query",
+    "description": "Retrieves a patron's barcode -- for testing only.",
+    "instructions": "No need to do anything. Just click submit.",
+    "parameters": [
+    ]
+}
