@@ -1,6 +1,6 @@
 --metadb:function get_patron_loan_history
 
-DROP FUNCTION IF EXISTS get_patron_loan_history
+DROP FUNCTION IF EXISTS get_patron_loan_history;
 
 CREATE FUNCTION get_patron_loan_history(patron_uuid text)
 RETURNS TABLE(
