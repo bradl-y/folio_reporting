@@ -4,13 +4,9 @@ DROP FUNCTION IF EXISTS get_children;
 
 CREATE FUNCTION get_children(parent_hrid text)
 RETURNS TABLE(
-	patron_barcode text,
-	patron_name text,
-	loan_status text,
-	item_title text,
-	loan_date text,
-	loan_return_date text,
-	item_barcode text,
+	hrid text,
+	title text,
+	first_contributor text,
 	call_number text
 ) AS
 $$
@@ -18,10 +14,10 @@ BEGIN
     BEGIN
         RETURN QUERY
             select
-				it.hrid,
-				it.title,
+				it.hrid as hrid,
+				it.title as title,
                 jsonb_extract_path_text(i.jsonb, 'contributors', '0', 'name') as first_contributor,
-	            hrt.call_number
+	            hrt.call_number as call_number
 			from
 				folio_inventory.instance i,
                 folio_inventory.instance__t it,
