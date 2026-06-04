@@ -1,4 +1,4 @@
---metadb:function get_patron_loan_history
+--metadb:function get_children
 
 DROP FUNCTION IF EXISTS get_children;
 
