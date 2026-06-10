@@ -1,0 +1,13 @@
+{
+    "displayName": "Records from call number string",
+    "description": "Allows staff to retrieve records based on all or part of a call number string.",
+    "instructions": "Enter all or part of the call number to search.",
+    "parameters": [
+        {
+            "name": "cn_str",
+            "displayName": "Call number text",
+            "type": "text",
+            "required": true
+        }
+    ]
+}
