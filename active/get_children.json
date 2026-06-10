@@ -1,7 +1,7 @@
 {
     "displayName": "Child records",
     "description": "Allows staff to retrieve child record information for a given parent HRID.",
-    "instructions": "Enter the parent record HRID to retrieve the related child records.",
+    "instructions": "Enter the parent record identifier from the 035$9 field to retrieve the related child records.\nEnter the number only and ignore the MARC organisation code in parentheses.",
     "parameters": [
         {
             "name": "parent_hrid",
