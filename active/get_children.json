@@ -4,8 +4,8 @@
     "instructions": "Enter the parent record identifier from the 035$9 field to retrieve the related child records. Enter the number only and ignore the MARC organisation code in parentheses.",
     "parameters": [
         {
-            "name": "parent_hrid",
-            "displayName": "Parent Instance HRID",
+            "name": "parent_identifier",
+            "displayName": "Identifier from 035$9",
             "type": "text",
             "required": true
         }

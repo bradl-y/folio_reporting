@@ -2,7 +2,7 @@
 
 DROP FUNCTION IF EXISTS get_children;
 
-CREATE FUNCTION get_children(parent_hrid text)
+CREATE FUNCTION get_children(parent_identifier text)
 RETURNS TABLE(
 	hrid text,
 	title text,
@@ -28,7 +28,7 @@ BEGIN
                 and i.id = it.id
                 and i.id = iat.instance_id
                 and iat.alternative_title_type_id = 'c0561f02-059a-4501-aca6-db5dcd4da3bf'
-                and iat.alternative_title like '%' || parent_hrid;
+                and iat.alternative_title like '%' || parent_identifier;
     END;
 END;
 $$
