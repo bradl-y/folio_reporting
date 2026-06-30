@@ -33,9 +33,7 @@ BEGIN
 			where
 				li.user_id = patron_uuid::UUID
 				and li.user_id = u.id
-				and li.item_id = ihi.item_id
-            order by
-	            li.loan_date asc;
+				and li.item_id = ihi.item_id;
     END;
 END;
 $$
