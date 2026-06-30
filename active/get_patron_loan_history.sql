@@ -8,7 +8,7 @@ RETURNS TABLE(
 	patron_name text,
 	loan_status text,
 	item_title text,
-	loan_date text,
+	item_loan_date text,
 	loan_return_date text,
 	item_barcode text,
 	call_number text
