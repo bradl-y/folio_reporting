@@ -22,7 +22,7 @@ BEGIN
 				concat_ws(' ', u.jsonb->'personal'->>'firstName', u.jsonb->'personal'->>'lastName') as patron_name,
 				li.loan_status as loan_status,
 				ihi.title as title,
-                to_char(li.loan_date, 'DD-MM-YYYY HH24:MI') as loan_date,
+                to_char(li.loan_date, 'DD-MM-YYYY HH24:MI') as item_loan_date,
 	            to_char(li.loan_return_date, 'DD-MM-YYYY HH24:MI') as loan_return_date,
 				li.barcode as item_barcode,
 				ihi.call_number as call_number
@@ -33,7 +33,8 @@ BEGIN
 			where
 				li.user_id = patron_uuid::UUID
 				and li.user_id = u.id
-				and li.item_id = ihi.item_id;
+				and li.item_id = ihi.item_id
+            order by li.loan_date asc;
     END;
 END;
 $$
