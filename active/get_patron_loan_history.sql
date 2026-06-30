@@ -22,8 +22,8 @@ BEGIN
 				concat_ws(' ', u.jsonb->'personal'->>'firstName', u.jsonb->'personal'->>'lastName') as patron_name,
 				li.loan_status as loan_status,
 				ihi.title as title,
-				to_char(li.loan_date, 'DD-MM-YYYY HH:MI am') as loan_date,
-				to_char(li.loan_return_date, 'DD-MM-YYYY HH:MI am') as loan_return_date,
+                to_char((li.loan_date::timestamp AT TIME ZONE 'UTC' AT TIME ZONE 'Australia/Canberra'), 'DD-MM-YYYY HH:MI am') as loan_date,
+				to_char((li.loan_return_date::timestamp AT TIME ZONE 'UTC' AT TIME ZONE 'Australia/Canberra'), 'DD-MM-YYYY HH:MI am') as loan_return_date,
 				li.barcode as item_barcode,
 				ihi.call_number as call_number
 			from
