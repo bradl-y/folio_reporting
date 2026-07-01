@@ -23,7 +23,7 @@ BEGIN
 				li.loan_status as loan_status,
 				ihi.title as title,
                 to_char(((li.loan_date::timestamp AT TIME ZONE 'UTC' AT TIME ZONE 'Australia/Canberra')::timestamp), 'DD-MM-YYYY HH24:MI') as item_loan_date,
-	            to_char(li.loan_return_date::timestamp AT TIME ZONE 'UTC' AT TIME ZONE 'Australia/Canberra')::timestamp), 'DD-MM-YYYY HH24:MI') as loan_return_date,
+	            to_char(((li.loan_return_date::timestamp AT TIME ZONE 'UTC' AT TIME ZONE 'Australia/Canberra')::timestamp), 'DD-MM-YYYY HH24:MI') as loan_return_date,
 				li.barcode as item_barcode,
 				ihi.call_number as call_number
 			from
