@@ -1,0 +1,19 @@
+{
+    "displayName": "Legal deposit records",
+    "description": "Allows staff to retrieve legal deposit records for a given date range.",
+    "instructions": "Enter the start date and the end date in the form d/mm/yyyy for LD records received within that date range. Only records with the following expense classes on their purchase orders are retrieved: AUSMUS/LD,\nAUSMON/GD,\nAUSMON/LD,\nAUSMAPFRE/ATLD,\nAUSMAPFRE/ATGD,\nAUSMAPFRE/LD,\nAUSMAPFRE/GD.",
+    "parameters": [
+        {
+            "name": "start_date",
+            "displayName": "Start date",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "end_date",
+            "displayName": "End date",
+            "type": "text",
+            "required": true
+        }
+    ]
+}
