@@ -43,8 +43,8 @@ BEGIN
                 )
             and ((pl.jsonb->>'receiptDate')::timestamptz
                 AT TIME ZONE 'Australia/Canberra')::date
-                BETWEEN start_date
-                    AND end_date
+                BETWEEN start_date::date
+                    AND end_date::date
             order by pol_receipt_date asc;
     END;
 END;
