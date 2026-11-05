@@ -1,0 +1,13 @@
+{
+    "displayName": "Item circulation history",
+    "description": "Allows staff to retrieve circulation log history for an item.",
+    "instructions": "Enter the item barcode.",
+    "parameters": [
+        {
+            "name": "itm_barcode",
+            "displayName": "Item barcode",
+            "type": "text",
+            "required": true
+        }
+    ]
+}
