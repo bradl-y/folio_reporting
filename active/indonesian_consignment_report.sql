@@ -5,6 +5,7 @@ DROP FUNCTION IF EXISTS indonesian_consignment_report;
 CREATE FUNCTION indonesian_consignment_report(con_number text)
 RETURNS TABLE(
 	"Sequence Num" text,
+    "Instance HRID" text,
 	"Contributors" text,
 	"Title" text,
 	"Publisher" text,
