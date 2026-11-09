@@ -1,0 +1,13 @@
+{
+    "displayName": "Indonesian consignment report",
+    "description": "Staff can create a list of Indonesian consignment items.",
+    "instructions": "Enter 3-digit consignment number.",
+    "parameters": [
+        {
+            "name": "con_number",
+            "displayName": "Consignment number",
+            "type": "text",
+            "required": true
+        }
+    ]
+}
